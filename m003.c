@@ -23,8 +23,23 @@
 
 int is_prime (int a)
 {
-  
-  return 0;
+int x;
+x = a;
+
+for(;x>0;x--)
+{
+  if (a % x == 0 && a!=x || a== 1)
+  {
+    return 0;
+    break;
+  }
+  else if (x==2)
+  {
+    return 1;
+    break;
+  }
+}
+
 }
 
 #define USAGE "m003 <num>\n"

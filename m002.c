@@ -27,55 +27,41 @@
 
 void sort (int *a, int *b, int *c)
 {
-  int t,x,y,d,f,g;
- t = *a;
- x = *b;
- y = *c;
+      int t;
+    if (*a<=*b && *b<=*c)
 
-  if (*a>=*b && *b>=*c)
+    if(*a<=*c && *c<=*b)
   {
-    *a=y;
-    *b=x;
+    t=*b;
+    *b=*c;
     *c=t;
   }
-  if (*a>=*b && *c>=*b)
-  {
-    *a=x;
-    *b=y;
-    *c=t;
-  }
-  if (*b>=*a && *a>=*c)
-  {
-    *a=y;
-    *b=t;
-    *c=x;
-  }
-  if (*b>=*a && *c>=*a)
-  {
-    *a= t;
-    *b= y;
-    *c= x;
-  }
-  if (*c>=*a && *a>=*b)
-  {
-    *a=x;
-    *b=t;
-    *c=y;
-  }
-  if (*c>=*a && *b>=*a)
-  {
-  *a=t;
-  *b=x;
-  *c=y;
-  }
-
-  d=*a;
-  f=*b;
-  g=*c;
-
-  *a=g;
-  *b=f;
-  *c=d;
+    if (*b<=*a && *a<=*c)
+    {
+      t=*a;
+      *a=*b;
+      *b=t;
+    }
+    if(*b<=*c && *c<=*a)
+    {
+      t=*a;
+      *a=*b;
+      *b=*c;
+      *c=t;
+    }
+    if(*c<=*a && *a<=*b)
+    {
+      t=*a;
+      *a=*c;
+      *c=*b;
+      *b=t;
+    }
+    if(*c<=*b && *b<=*a)
+    {
+      t=*a;
+      *a=*c;
+      *c=t;
+    }
 }
 
 /* Do not edit this function. */

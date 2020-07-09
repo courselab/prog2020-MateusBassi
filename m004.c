@@ -29,6 +29,11 @@
 
 int decimal (char *b)
 {
+  int i;
+ int  value = 0;
+  n = strlen[b];
+  for (i=n-1;i>=0;i--);
+  value = value + (b[i]-'1');
   
   return 0;
 }
