@@ -23,7 +23,7 @@
 
 int is_prime (int a)
 {
-int x,aux;
+int x,aux=1;
 x = a;
 
 for(x;x>0;x--)
@@ -31,10 +31,6 @@ for(x;x>0;x--)
   if (((a % x == 0) && (a!=x)) || (a== 1))
   {
     aux= 0;
-  }
-  else
-  {
-    aux=1;
   }
 }
 return aux;
