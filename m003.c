@@ -26,13 +26,15 @@ int is_prime (int a)
 int x,aux=1;
 x = a-1;
 
-for(x;x>0;x--)
+for(x;x>1;x--)
 {
-  if (((a % x == 0) && (a!=x)) || (a== 1) ||(a==0))
+  if (a%x==0)
   {
     aux= 0;
   }
 }
+if(a==0 || a==1)
+aux=0;
 return aux;
 }
 
