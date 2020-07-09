@@ -24,7 +24,7 @@
 int is_prime (int a)
 {
 int x,aux=1;
-x = a;
+x = a-1;
 
 for(x;x>0;x--)
 {
